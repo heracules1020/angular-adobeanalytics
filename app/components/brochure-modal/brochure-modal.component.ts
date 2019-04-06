@@ -6,22 +6,21 @@ import { LoggingService } from 'src/app/services/logging/logging.service';
 import { HttpClient } from '@angular/common/http';
 import { NgbTabset } from '@ng-bootstrap/ng-bootstrap';
 
-
-
 @Component({
   selector: 'app-brochure-modal',
   templateUrl: './brochure-modal.component.html',
   styleUrls: ['./brochure-modal.component.css']
 })
 export class BrochureModalComponent implements OnInit {
-  @Input() productDetailValues: any;
   @Input() pdfSrc : any;
+  @Input() productDetailValues: any;
   constructor(
     public dialogRef: MatDialogRef<BrochureModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,public dialog: MatDialog,private http:HttpClient,
     private logservice:LoggingService) {
       this.logservice.log(this.data.productDetailValues);
     }
+    
   ngOnInit() {
     if(environment.production==true)
       this.pdfSrc= window.location.origin+"/"+environment.base_url +environment.get_pdf_brochure_by_object_id_endpoint+"/"+this.data.pdfSrc;
