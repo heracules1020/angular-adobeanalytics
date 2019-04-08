@@ -2,12 +2,12 @@ import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { ProductDetailModalComponent } from '../product-detail-modal/product-detail-modal.component';
 import { RestService } from '../../services/rest/rest.service';
-import { LoggingService } from 'src/app/services/logging/logging.service';
-import {constants} from '../../services/common/constants';
 import { ApplicationStateService } from 'src/app/services/application/application-state.service';
 import { MobileProductDetailComponent } from 'src/app/components/mobile/mobile-product-detail/mobile-product-detail.component';
 import { Router } from '@angular/router';
 import { SharedService } from 'src/app/services/common/shared.service';
+import { LoggingService } from 'src/app/services/logging/logging.service';
+import {constants} from '../../services/common/constants';
 
 @Component({
   selector: 'cards',
@@ -38,15 +38,11 @@ export class CardsComponent implements OnInit {
     //     this.productDetailList = arrCase['dealers']     
     //     console.log("this.productDetailList in cards" +this.productDetailList);   
     //   });
-    
-      
   }
-
   getProductDetail(){
     //onclick learnmore button---------------------------------2019.08.01-------------------------------
     this.trackLog();
     this.showProductDetail();
-
   }
   trackLog(){  //display tracking log when user clicks learnmore button.
     let logstr = {
@@ -67,7 +63,6 @@ export class CardsComponent implements OnInit {
     }
     console.log("fireTag('aa-link',", logstr,")");
   }
-
   showProductDetail(){
     if(this.appService.isMobileResolution){
       this.shared.setMobileProductDetailList(this.productDetailList);
