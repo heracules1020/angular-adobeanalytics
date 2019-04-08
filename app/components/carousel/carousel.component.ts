@@ -22,15 +22,14 @@ export class CarouselComponent implements AfterViewInit {
   @Input() timing = '250ms ease-in';
   @Input() showControls = false;
   private player : AnimationPlayer;
-  private itemWidth : number;
   private currentSlide = 0;
+  private itemWidth : number;
   carouselWrapperStyle = {}
 
   next() {
     var numberOfItemsOnScreen = window.outerWidth/(this.itemWidth*1.25);
     numberOfItemsOnScreen=(numberOfItemsOnScreen|0);
    if( this.currentSlide  === this.items.length-numberOfItemsOnScreen ) return;
- 
     this.currentSlide = (this.currentSlide + 1) % this.items.length;
     const offset = this.currentSlide * this.itemWidth;
     const myAnimation : AnimationFactory = this.buildAnimation(offset);
@@ -46,10 +45,8 @@ export class CarouselComponent implements AfterViewInit {
 
   prev() {
     if( this.currentSlide === 0 ) return;
-
     this.currentSlide = ((this.currentSlide - 1) + this.items.length) % this.items.length;
     const offset = this.currentSlide * this.itemWidth;
-
     const myAnimation : AnimationFactory = this.buildAnimation(offset);
     this.player = myAnimation.create(this.carousel.nativeElement);
     this.player.play();
