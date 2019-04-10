@@ -17,8 +17,6 @@
   </div>
 </div>
 
-
-
 <div class="header-red-main" id="pageTitle">
   What comes next<br>
 </div>
@@ -38,32 +36,26 @@
 <div class="horizontal_line"></div>
 
 <div class="container-fluid" style="background: #FFFFFF">
-      <div class="row">
-        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-          <p class="text-indipent" id="pageBrowse">
-            In the meantime, browse our options to protect your investment
-          </p>
-        </div>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-          <button class="prev_navigation" id="corouselLeft" (click)="prev()">
-            <img src="/assets/right.svg" />
-          </button>
-          <button class="next_navigation" id="corouselRight" (click)="next()">
-            <img src="/assets/right.svg" class="flipimg" />
-          </button>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <p class="text-indipent" id="pageBrowse">
+        In the meantime, browse our options to protect your investment
+      </p>
     </div>
-
-
-
-   
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      <button class="prev_navigation" id="corouselLeft" (click)="prev()">
+        <img src="/assets/right.svg" />
+      </button>
+      <button class="next_navigation" id="corouselRight" (click)="next()">
+        <img src="/assets/right.svg" class="flipimg" />
+      </button>
+    </div>
+  </div>
+</div>
 
 <div class="half-background">
   <div class="cards_bucket">
     <carousel #carousel>
-        
-
       <ng-container *ngFor="let item of products;">
         <ng-container *carouselItem>
           <div style="margin-right: 20px">
