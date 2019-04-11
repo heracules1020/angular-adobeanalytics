@@ -10,7 +10,6 @@ import {environment} from '../../../../environments/environment';
   styleUrls: ['./mobile-brochure-modal.component.css']
 })
 export class MobileBrochureModalComponent implements OnInit {
-
   @Input() productDetailValues: any;
   @Input() pdfSrc : any;
   constructor(
@@ -25,7 +24,6 @@ export class MobileBrochureModalComponent implements OnInit {
     else
     this.pdfSrc= environment.base_url +environment.get_pdf_brochure_by_object_id_endpoint+"/"+this.data.pdfSrc;
   }
-  
   onCloseModal(): void {
     this.dialogRef.close();
   }
