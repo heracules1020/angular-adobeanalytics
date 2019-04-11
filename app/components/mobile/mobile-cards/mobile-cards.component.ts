@@ -21,14 +21,13 @@ export class MobileCardsComponent implements OnInit {
     productDetailArray: Array<Object>;
     @ViewChild('productDetail')
     productDetail: ProductDetailModalComponent;
-    @Input() productid:String;
-    @ViewChild('mobileProductDetail')
     mobileProductDetail:MobileProductDetailComponent;
+    @Input() productid:String;
+    @ViewChild('mobileProductDetail')  
   
     constructor( private rest:RestService,private  dialog:  MatDialog,
       private appService:ApplicationStateService, private router : Router,private shared:SharedService,
       private logger:LoggingService) { }
-  
     ngOnInit() {
       //this.productDetailList=[""];
       let requestParams = new Map();
@@ -40,19 +39,14 @@ export class MobileCardsComponent implements OnInit {
       //     this.productDetailList = arrCase['dealers']     
       //     console.log("this.productDetailList in cards" +this.productDetailList);   
       //   });
-      
-        
     }
   
     getProductDetail(){
       this.showProductDetail();
-  
     }
-  
     showProductDetail(){
         this.shared.setMobileProductDetailList([this.productDetailList]);
        // this.router.navigate(['/productDetail']);
-        this.router.navigateByUrl('productDetail', { skipLocationChange: true });
-      
+        this.router.navigateByUrl('productDetail', { skipLocationChange: true }); 
     }
   }

@@ -1,32 +1,23 @@
 <div class="card" *ngIf="productDetailList!=null && productDetailList!=''">
-    <div id="productImage_{{productDetailList.productId}}">
-        <div *ngIf="productDetailList.productId=='GAP'" >
-             <img  src="assets/gap.png" style="height: 259px;" >
-        </div>
-       
-        <div *ngIf="productDetailList.productId=='PPM'">
-            <img  src="assets/ppm.png" style="height: 259px;"/>
-        </div>
-        
-        <div *ngIf="productDetailList.productId=='VSA'">
-            <img  src="assets/vsa.png" style="height: 259px;"/>
-        </div>
-        
-        
-        <div *ngIf="productDetailList.productId=='TW'">
-            <img  src="assets/tw.png" style="height: 259px;"/>
-        </div>
-        
-        
-        <div *ngIf="productDetailList.productId=='EWU'">
-             <img  src="assets/ewu.png" style="height: 259px;"/>
-        </div>
-     </div>
-
-    <h4 class="header_for_card" id="productTitle_{{productDetailList.productId}}">{{productDetailList.displayName}}</h4> 
-
-    <p class="text_for_card" id="productTagline_{{productDetailList.productId}}" [innerHtml]="productDetailList.salesClasses.salesClass[0].content.productTaglineTextUrl" ></p> 
-
-    <button class="button-red-rectangle" id="productLearnMore_{{productDetailList.productId}}" (click)="getProductDetail()">LEARN MORE</button>
+	<div id="productImage_{{productDetailList.productId}}">
+		<div *ngIf="productDetailList.productId=='GAP'" >
+				<img  src="assets/gap.png" style="height: 259px;" >
+		</div>
+		<div *ngIf="productDetailList.productId=='PPM'">
+			<img  src="assets/ppm.png" style="height: 259px;"/>
+		</div>	
+		<div *ngIf="productDetailList.productId=='VSA'">
+			<img  src="assets/vsa.png" style="height: 259px;"/>
+		</div>
+		<div *ngIf="productDetailList.productId=='TW'">
+			<img  src="assets/tw.png" style="height: 259px;"/>
+		</div>
+		<div *ngIf="productDetailList.productId=='EWU'">
+			<img  src="assets/ewu.png" style="height: 259px;"/>
+		</div>
+	</div>
+	<h4 class="header_for_card" id="productTitle_{{productDetailList.productId}}">{{productDetailList.displayName}}</h4> 
+	<p class="text_for_card" id="productTagline_{{productDetailList.productId}}" [innerHtml]="productDetailList.salesClasses.salesClass[0].content.productTaglineTextUrl" ></p> 
+	<button class="button-red-rectangle" id="productLearnMore_{{productDetailList.productId}}" (click)="getProductDetail()">LEARN MORE</button>
 </div>
 

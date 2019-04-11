@@ -7,11 +7,6 @@
 		/* margin-left: 20px;
 		padding-left: 27px; */
 }
-	
-img{
-	width: 354px;  
-	border-radius: 5px;
-}
 
 .button-red-rectangle
 {	
@@ -31,6 +26,11 @@ img{
 	position: absolute;	
 	bottom: 35px;
 	margin-left: 5%;
+}
+	
+img{
+	width: 354px;  
+	border-radius: 5px;
 }
 
 .text_for_card
