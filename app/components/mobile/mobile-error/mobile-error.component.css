@@ -1,42 +1,42 @@
 .logo_box {
-    height: 60px;
-    width: 60px;
-    background-color: #CC0000;
+	height: 60px;
+	width: 60px;
+	background-color: #CC0000;
 }
 
 .logo_image {
-    margin-top: 18px;
-    margin-left: 11px;
+	margin-top: 18px;
+	margin-left: 11px;
 }
-
-.header-red-main {
-    padding-top: 37px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background: #FFFFFF;
-    color: #CC0000;
-    /* font-family: "Helvetica Neue";	 */
-    font-size: 36px;
-    font-weight: bold;
-    padding-bottom: 0px;
-}
-
 .text-under-header-main {
-    padding-top: 0px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background: #FFFFFF;
-    color: rgba(27, 37, 50, 0.8);
-    /* font-family: "Helvetica Neue";*/
-    font-size: 18px;
-    line-height: 24px;
-    padding-bottom: 27px;
+	padding-top: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #FFFFFF;
+	color: rgba(27, 37, 50, 0.8);
+	/* font-family: "Helvetica Neue";*/
+	font-size: 18px;
+	line-height: 24px;
+	padding-bottom: 27px;
 }
 
 .horizontal_line {
-    border-bottom: 1px solid rgba(27, 37, 50, 0.08);
+	border-bottom: 1px solid rgba(27, 37, 50, 0.08);
 }
 
 .half-background {
-    background-color: #F5F6F8;
+	background-color: #F5F6F8;
+}
+
+
+.header-red-main {
+	padding-top: 37px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background: #FFFFFF;
+	color: #CC0000;
+	/* font-family: "Helvetica Neue";	 */
+	font-size: 36px;
+	font-weight: bold;
+	padding-bottom: 0px;
 }
