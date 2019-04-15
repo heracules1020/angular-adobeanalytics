@@ -29,11 +29,7 @@ export class MobileLandingComponent implements OnInit {
     // });
 
     dealerId=this.route.snapshot.paramMap.get("dealerId");
-
-    console.log('DealerId '+dealerId); 
-
     this.shared.setDealerId(dealerId);
-
     if ( dealerId == null || dealerId == 'undefined' ) {
       dealerId  = "34089";
     }
@@ -42,30 +38,27 @@ export class MobileLandingComponent implements OnInit {
     requestParams.set("id",dealerId);
     this.shared.setProductList(this.products);
      
-      this.rest.handleRestCall(constants.GET_DEALER_BY_NUMBER,requestParams,"").subscribe(
-        response=>{   
-          if(response.dealerName == undefined)
-          {
-            console.log("dealer not found ");
-          }
-          this.dealerName = response.dlrNm;
-        });
-        
-        this.rest.handleRestCall(constants.GET_PRODUCTS_BY_DEALER,requestParams,"").subscribe(
-          response=>{      
-          var arrCase = response as object ;
-            this.products = arrCase['dealers']             
-            this.shared.setProductList(this.products) ;
-          },
-          err=>{
-            this.router.navigate(['/error']);
-          }
-          );
-    
+    this.rest.handleRestCall(constants.GET_DEALER_BY_NUMBER,requestParams,"").subscribe(
+      response=>{   
+        if(response.dealerName == undefined)
+        {
+          console.log("dealer not found ");
+        }
+        this.dealerName = response.dlrNm;
+      });
+      
+    this.rest.handleRestCall(constants.GET_PRODUCTS_BY_DEALER,requestParams,"").subscribe(
+      response=>{      
+      var arrCase = response as object ;
+        this.products = arrCase['dealers']             
+        this.shared.setProductList(this.products) ;
+      },
+      err=>{
+        this.router.navigate(['/error']);
+      }
+    );
   }
-
   @ViewChild('carousel') carousel; 
-
   next() {
     this.carousel.next();
   }
