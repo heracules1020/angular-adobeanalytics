@@ -1,110 +1,110 @@
 .view-brochure:hover
 {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 
 .mat-dialog-parent {
-    width: 100%;
-    /* //height:100%; */
+	width: 100%;
+	/* //height:100%; */
 }
 
 .mat-dialog-container {
-    padding: 0 !important;
-    background-color: white!important;
-    object-fit: contain;
-    box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.3);
-    align-items: left;
+	padding: 0 !important;
+	background-color: white!important;
+	object-fit: contain;
+	box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.3);
+	align-items: left;
 }
 
 img {
-    height: 30%;
-    width: 90%;
-    padding-left: 2%;
+	height: 30%;
+	width: 90%;
+	padding-left: 2%;
 }
 
 .half-background {
-    background-color: #F5F6F8;
-    z-index: -1;
-    width: 100%;
+	background-color: #F5F6F8;
+	z-index: -1;
+	width: 100%;
 }
 
 .cdk-overlay-pane {
-    display: block !important;
+	display: block !important;
 }
 
 .mat-dialog-title {
-    position: relative;
-    height: 40px;
-    color: #CC0000;
-    font-family: "Helvetica";
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 40px;
-    /* padding-top: 45px;
-     padding-left:20px; */
+	position: relative;
+	height: 40px;
+	color: #CC0000;
+	font-family: "Helvetica";
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 40px;
+	/* padding-top: 45px;
+		padding-left:20px; */
 }
 
 .content {
-    height: 24px;
-    color: rgba(27, 37, 50, 0.8);
-    font-family: "Helvetica";
-    font-size: 18px;
-    line-height: 24px;
+	height: 24px;
+	color: rgba(27, 37, 50, 0.8);
+	font-family: "Helvetica";
+	font-size: 18px;
+	line-height: 24px;
 }
 
 .video-img {
-    position: relative;
-    left: 0;
-    top: 0;
+	position: relative;
+	left: 0;
+	top: 0;
 }
 
 .play-icon {
-    position: absolute;
-    left: 140px;
-    right: 140px;
-    top: 60px;
-    width: 50px;
-    height: 50px;
+	position: absolute;
+	left: 140px;
+	right: 140px;
+	top: 60px;
+	width: 50px;
+	height: 50px;
 }
 
 .footer {
-    background-color: #FFFFFF;
-    box-shadow: 0 0 1px 0 rgba(27, 37, 50, 0.4), 0 0 16px 0 rgba(27, 37, 50, 0.12);
-    position: fixed;
-    margin-left: -190px;
-    bottom: 0;
-    height: 80px;
-    width: 150%;
-    padding: 0
+	background-color: #FFFFFF;
+	box-shadow: 0 0 1px 0 rgba(27, 37, 50, 0.4), 0 0 16px 0 rgba(27, 37, 50, 0.12);
+	position: fixed;
+	margin-left: -190px;
+	bottom: 0;
+	height: 80px;
+	width: 150%;
+	padding: 0
 }
 
 select option {
-    color: #CC0000;
+	color: #CC0000;
 }
 
 .sub-content {
-    color: rgba(27, 37, 50, 0.8);
-    font-family: "Helvetica";
-    font-size: 18px;
-    line-height: 24px;
-    padding-left:6px;
-    padding-right:6px;
+	color: rgba(27, 37, 50, 0.8);
+	font-family: "Helvetica";
+	font-size: 18px;
+	line-height: 24px;
+	padding-left:6px;
+	padding-right:6px;
 }
 
 .inline {
-    float: left;
-    margin: 12px;
-    border: 0px;
-    color: #CC0000;
+	float: left;
+	margin: 12px;
+	border: 0px;
+	color: #CC0000;
 }
 
 .inline option:not(:checked) {
-    color: black;
+	color: black;
 }
 
 .inline option:checked {
-    color: #CC0000;
+	color: #CC0000;
 }
 
 .mat-expansion-panel {

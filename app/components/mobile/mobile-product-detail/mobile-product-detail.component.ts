@@ -27,11 +27,11 @@ export class MobileProductDetailComponent implements OnInit {
   salesClasses :any;
   showDropdown: boolean = false;
   @Input() productDetailList:Array<Object>;
-  @Input() mobileProductDetail: MobileProductDetailComponent;
   productDetailValues:Array<Object>;
+  @Input() mobileProductDetail: MobileProductDetailComponent;
   @Input() dealerPlan:any;
-  @Input()salesClassArr:any;
   @Input()selectedValue:any;
+  @Input()salesClassArr:any; 
   @Input()selectedSalesClassArr:any;
   productDetailJson : string;
   dialogRef : any;

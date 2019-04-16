@@ -1,107 +1,107 @@
 <div class="container-fluid" style="width:100%;">
-    <div class="scrollDiv">
-        <div class="col-2">
+	<div class="scrollDiv">
+		<div class="col-2">
 
-        </div>
-        <div class="col-10">
-            <button (click)="goToLanding()" class="left_landing"><img src="/assets/right.svg"/></button>
-            <div class="row" class="sub-content">
-                <h3 mat-dialog-title id="productTitle">
-                    {{mobileProductDetail[0].displayName}}
-                </h3><br><br>
-                <div class="row" id="productOverview" class="sub-content" [innerHtml]="selectedSalesClassArr.content.productOverviewTextUrl"></div>
-                <br><br>
-                <div class="row sub-content">
-                    <div class="col-sm-* col-md-*" id="productVideo">
-                        <div class="video-img" *ngIf="mobileProductDetail[0].productId=='GAP'">
-                            <img class="video-img" src="assets/gap.png" />
-                            <img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
-                        </div>
-                        <div class="video-img" *ngIf="mobileProductDetail[0].productId=='PPM'">
-                            <img class="video-img" src="assets/ppm.png" />
-                            <img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
-                        </div>
-                        <div class="video-img" *ngIf="mobileProductDetail[0].productId=='VSA'">
-                            <img class="video-img" src="assets/vsa.png" />
-                            <img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
-                        </div>
-                        <div class="video-img" *ngIf="mobileProductDetail[0].productId=='TW'">
-                            <img class="video-img" style="position:relative;" src="assets/tw.png" />
-                            <img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
-                        </div>
-                        <div class="video-img" *ngIf="mobileProductDetail[0].productId=='EWU'">
-                            <img class="video-img" src="assets/ewu.png" />
-                            <img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
-                        </div>
-                    </div>
+		</div>
+		<div class="col-10">
+			<button (click)="goToLanding()" class="left_landing"><img src="/assets/right.svg"/></button>
+			<div class="row" class="sub-content">
+				<h3 mat-dialog-title id="productTitle">
+						{{mobileProductDetail[0].displayName}}
+				</h3><br><br>
+				<div class="row" id="productOverview" class="sub-content" [innerHtml]="selectedSalesClassArr.content.productOverviewTextUrl"></div>
+				<br><br>
+				<div class="row sub-content">
+					<div class="col-sm-* col-md-*" id="productVideo">
+							<div class="video-img" *ngIf="mobileProductDetail[0].productId=='GAP'">
+									<img class="video-img" src="assets/gap.png" />
+									<img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
+							</div>
+							<div class="video-img" *ngIf="mobileProductDetail[0].productId=='PPM'">
+									<img class="video-img" src="assets/ppm.png" />
+									<img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
+							</div>
+							<div class="video-img" *ngIf="mobileProductDetail[0].productId=='VSA'">
+									<img class="video-img" src="assets/vsa.png" />
+									<img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
+							</div>
+							<div class="video-img" *ngIf="mobileProductDetail[0].productId=='TW'">
+									<img class="video-img" style="position:relative;" src="assets/tw.png" />
+									<img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
+							</div>
+							<div class="video-img" *ngIf="mobileProductDetail[0].productId=='EWU'">
+									<img class="video-img" src="assets/ewu.png" />
+									<img class="play-icon" src="/assets/play_button_redonwhite.png" (click)="openVideoCompo(selectedSalesClassArr.content.productImageUrl,selectedSalesClassArr.content.productVideoUrl)" />
+							</div>
+					</div>
 
-                    <select id="carTypeSelection" *ngIf="showDropdown && salesClassArr[0].id!=''" class="inline" id="carTypeSelection" ng-init="selectedValue = selectedValue || options[0].value" [(ngModel)]="selectedValue" (change)="onChange($event,selectedValue)">
-                        <ng-container  *ngFor="let salesClass of salesClassArr" >
-                        <option  id="carTypeOption" *ngIf="salesClass.plans.plan?.length>0" [ngValue]="salesClass.id" selected="selected"><b>{{salesClass.id}}</b></option>
-                        </ng-container>
-                    </select><br><br>
-                    <ngb-tabset #tabRef="ngbTabset" class="tabset1" id="planTypeSelection">
-                        <ngb-tab *ngFor="let plan of selectedSalesClassArr.plans.plan" (ngClick)="selectedTab(plan.id)" [id]="plan.id">
+					<select id="carTypeSelection" *ngIf="showDropdown && salesClassArr[0].id!=''" class="inline" id="carTypeSelection" ng-init="selectedValue = selectedValue || options[0].value" [(ngModel)]="selectedValue" (change)="onChange($event,selectedValue)">
+							<ng-container  *ngFor="let salesClass of salesClassArr" >
+							<option  id="carTypeOption" *ngIf="salesClass.plans.plan?.length>0" [ngValue]="salesClass.id" selected="selected"><b>{{salesClass.id}}</b></option>
+							</ng-container>
+					</select><br><br>
+					<ngb-tabset #tabRef="ngbTabset" class="tabset1" id="planTypeSelection">
+							<ngb-tab *ngFor="let plan of selectedSalesClassArr.plans.plan" (ngClick)="selectedTab(plan.id)" [id]="plan.id">
 
-                            <ng-template ngbTabTitle *ngIf="salesClassArr[0].id!='' || selectedSalesClassArr.plans.plan?.length >1">
-                                {{plan.displayName}}
-                            </ng-template>
+									<ng-template ngbTabTitle *ngIf="salesClassArr[0].id!='' || selectedSalesClassArr.plans.plan?.length >1">
+											{{plan.displayName}}
+									</ng-template>
 
-                            <ng-template ngbTabContent>
-                                <div class="row" class="sub-content">
-                                    <h3><b>{{plan.displayName}}</b></h3><br></div>
+									<ng-template ngbTabContent>
+											<div class="row" class="sub-content">
+													<h3><b>{{plan.displayName}}</b></h3><br></div>
 
-                                <div class="row" id="planOverview" class="sub-content" [innerHtml]="plan.content.planOverviewTextUrl">
-                                    <!-- {{plan.content.planOverviewTextUrl}}  -->
-                                </div>
-                                <div class="sub-content" id="eligibilityDescrip" *ngIf="plan.content.eligibilityTaglineUrl!=''">
-                                    <hr>
-                                    <div class="row">
-                                        <mat-expansion-panel>
-                                            <mat-expansion-panel-header>
-                                                <mat-panel-title>
-                                                    <span style="color: #CC0000;"><b>Vehicle Eligiblity</b></span>
-                                                </mat-panel-title>
-                                            </mat-expansion-panel-header>
-                                            <div [innerHtml]="plan.content.eligibilityTaglineUrl"></div>
-                                            <div [innerHtml]="plan.content.eligibilityDescriptionTextUrl"></div>
-                                        </mat-expansion-panel>
-                                    </div>
-                                </div>
-                                <div class="sub-content" id="benefits" *ngIf="plan.content.benefitsTextUrl!=''">
-                                    <div class="row">
-                                        <hr>
-                                        <mat-expansion-panel>
-                                            <mat-expansion-panel-header>
-                                                <mat-panel-title>
-                                                    <span style="color: #CC0000;"><b>Benefits </b></span>
-                                                </mat-panel-title>
-                                            </mat-expansion-panel-header>
-                                            <div [innerHtml]="plan.content.benefitsTextUrl"></div>
-                                        </mat-expansion-panel>
-                                    </div>
-                                    <hr><br></div>
-                                <div class="row" id="disclaimers" class="sub-content" *ngIf="plan.content.disclaimersTextUrl!=null">
-                                    <label>Disclaimers</label><br>
-                                    <div [innerHtml]="plan.content.disclaimersTextUrl"></div>
-                                </div><br>
-                                <div class="footer">
+											<div class="row" id="planOverview" class="sub-content" [innerHtml]="plan.content.planOverviewTextUrl">
+													<!-- {{plan.content.planOverviewTextUrl}}  -->
+											</div>
+											<div class="sub-content" id="eligibilityDescrip" *ngIf="plan.content.eligibilityTaglineUrl!=''">
+													<hr>
+													<div class="row">
+															<mat-expansion-panel>
+																	<mat-expansion-panel-header>
+																			<mat-panel-title>
+																					<span style="color: #CC0000;"><b>Vehicle Eligiblity</b></span>
+																			</mat-panel-title>
+																	</mat-expansion-panel-header>
+																	<div [innerHtml]="plan.content.eligibilityTaglineUrl"></div>
+																	<div [innerHtml]="plan.content.eligibilityDescriptionTextUrl"></div>
+															</mat-expansion-panel>
+													</div>
+											</div>
+											<div class="sub-content" id="benefits" *ngIf="plan.content.benefitsTextUrl!=''">
+													<div class="row">
+															<hr>
+															<mat-expansion-panel>
+																	<mat-expansion-panel-header>
+																			<mat-panel-title>
+																					<span style="color: #CC0000;"><b>Benefits </b></span>
+																			</mat-panel-title>
+																	</mat-expansion-panel-header>
+																	<div [innerHtml]="plan.content.benefitsTextUrl"></div>
+															</mat-expansion-panel>
+													</div>
+													<hr><br></div>
+											<div class="row" id="disclaimers" class="sub-content" *ngIf="plan.content.disclaimersTextUrl!=null">
+													<label>Disclaimers</label><br>
+													<div [innerHtml]="plan.content.disclaimersTextUrl"></div>
+											</div><br>
+											<div class="footer">
 
-                                    <a id="productBrochure" class="view-brochure" (click)="showPDFBrochure(plan.content.brochurePdfObjectId)" style="cursor: pointer; "> <img src="/assets/viewBrochure.png" class="icon-brochure">View brochure</a>
+													<a id="productBrochure" class="view-brochure" (click)="showPDFBrochure(plan.content.brochurePdfObjectId)" style="cursor: pointer; "> <img src="/assets/viewBrochure.png" class="icon-brochure">View brochure</a>
 
-                                    <div *ngIf="hidePrevIcon">
-                                        <button (click)="prev()" id="prevProduct" class="left_navigate-prev"><img src="/assets/right.svg"/></button>
-                                    </div>
-                                    <div *ngIf="hideNextIcon">
-                                        <button (click)="next()" id="nextProduct" class="right_navigate-next"><img src="/assets/right.svg" class="flipimg" /></button>
-                                    </div>
+													<div *ngIf="hidePrevIcon">
+															<button (click)="prev()" id="prevProduct" class="left_navigate-prev"><img src="/assets/right.svg"/></button>
+													</div>
+													<div *ngIf="hideNextIcon">
+															<button (click)="next()" id="nextProduct" class="right_navigate-next"><img src="/assets/right.svg" class="flipimg" /></button>
+													</div>
 
-                                </div>
-                            </ng-template>
-                        </ngb-tab>
-                    </ngb-tabset>
-                </div><br>
-            </div>
-        </div>
-    </div>
+											</div>
+									</ng-template>
+							</ngb-tab>
+					</ngb-tabset>
+				</div><br>
+			</div>
+		</div>
+	</div>
 </div>
