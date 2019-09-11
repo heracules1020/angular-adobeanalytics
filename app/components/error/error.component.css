@@ -1,0 +1,37 @@
+.logo_box {
+    height: 60px;
+    width: 60px;
+    background-color: #CC0000;
+}
+
+.logo_image {
+    margin-top: 18px;
+    margin-left: 11px;
+}
+
+
+.header-red-main {
+    padding-top: 8px;
+    background: #FFFFFF;
+    padding-left: 103px;
+    color: #CC0000;
+    /* font-family: "Helvetica Neue";	 */
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.text-under-header-main {
+    padding-top: 9px;
+    padding-left: 103px;
+    background: #FFFFFF;
+    color: rgba(27, 37, 50, 0.8);
+    /* font-family: "Helvetica Neue";	 */
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 90px;
+}
+
+.horizontal_line {
+    border-bottom: 1px solid rgba(27, 37, 50, 0.08);
+}

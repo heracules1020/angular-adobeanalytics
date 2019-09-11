@@ -1,0 +1,27 @@
+.mat-dialog-parent{
+    width:100%;
+    height:100%;
+  }
+  .mat-dialog-container{padding:0 !important;
+      background-color:black!important;object-fit: contain;  ;
+      overflow:auto;
+    }
+   img{height: 100%;width: 100%;} 
+  .modal-close{
+    position: absolute;
+    right: -7px;
+    top: -22px;
+    font-size: 35px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 30px;
+    color:red;
+  
+  }
+  
+  .cdk-overlay-pane{
+    display: block !important;
+  } 
+  .mat-dialog-title{position: relative; background-color: black!important;}

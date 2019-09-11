@@ -1,0 +1,37 @@
+<div style="background: #FFFFFF">
+  <div class="logo_box" id="toyotaLogo" >
+    <img class="logo_image" src="/assets/toyota.svg">
+  </div>
+</div>
+  
+<div  class= "header-red-main" id="pageTitle">
+  What comes next
+</div>
+  
+<div class= "text-under-header-main" id="pageTagline">
+  Let’s talk about the steps you have left before driving off in your new vehicle<br>
+    <div> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •&nbsp;&nbsp;	Verify your information for accuracy <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •&nbsp;&nbsp;	Discuss how to protect your investment and make decisions that meet your needs<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •&nbsp;&nbsp;	Answer any questions you may have<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •&nbsp;&nbsp;	Review and sign documents<br>
+      Final step is to meet with your sales consultant to personalize your vehicle and learn more about its features
+    </div>
+</div>
+  
+<div class="horizontal_line"></div>
+
+<div class="text-indipent" id="pageBrowse">
+  <h3> In the meantime, browse our options to protect your investment</h3>
+</div>
+  
+<div class="half-background">
+  <div class="cards_bucket">
+    <ng-container *ngFor="let item of products;" >
+      <div style="margin-bottom:29px">
+        <mobile-cards [productid]="item.objectId" [productDetailList]="item"></mobile-cards>
+      </div>
+    </ng-container>
+  </div>
+</div> 
+  

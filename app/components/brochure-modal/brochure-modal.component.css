@@ -1,0 +1,25 @@
+button.close {
+    position: fixed;
+    top: auto !important;
+    opacity: 2;
+    margin-left: 79%;
+    margin-top: 10px;
+    float: right;
+}
+
+button.close[_ngcontent-abm-c8] {
+    position: fixed;
+    top: auto !important;
+    opacity: 2;
+    margin-left: 79%;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+
+.pdf-styles {
+    margin-left: 10px;
+    margin-right: 20px;
+}

@@ -1,0 +1,10 @@
+<div (swipe)="onSwipe($event)">
+    <section [ngStyle]="carouselWrapperStyle">
+        <!-- <section style="border-style: solid;" class="carousel-wrapper" [ngStyle]="carouselWrapperStyle"> -->
+        <ul class="carousel-inner" #carousel>
+            <li *ngFor="let item of items;" class="carousel-item">
+                <ng-container [ngTemplateOutlet]="item.tpl"></ng-container>
+            </li>
+        </ul>
+    </section>
+</div>

@@ -1,0 +1,102 @@
+.card {
+    border: 1px solid rgba(27, 37, 50, 0.08);
+    width: 460px;
+    height: 550px;
+    position: relative;
+}
+
+img {
+    width: 460px;
+    border-radius: 5px;
+}
+
+.button-red-rectangle {
+    height: 48px;
+    width: 180px;
+    border-radius: 24px;
+    background-color: #CC0000;
+    color: #FFFFFF;
+    /*font-family: "Helvetica Neue";	*/
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 16px;
+    text-align: center;
+    border: none;
+    position: absolute;
+    bottom: 35px;
+    margin-left: 5%;
+}
+
+.text_for_card {
+    padding: 10;
+    margin-left: 5%;
+    color: rgba(27, 37, 50, 0.6);
+    /*0font-family: "Helvetica Neue";*/
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.header_for_card {
+    margin-top: 32px;
+    margin-left: 5%;
+    color: #1B2532;
+    /*font-family: "Helvetica Neue";	*/
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+
+@media only  screen and (max-width:1024px)
+{
+    .card {
+        border: 1px solid rgba(27, 37, 50, 0.08);
+        width: 363px;
+        height: 385px;
+    }
+    
+    img {
+        width: 363px;
+        border-radius: 5px;
+    }
+
+    .button-red-rectangle {
+        height: 48px;
+        width: 180px;
+        border-radius: 24px;
+        background-color: #CC0000;
+        color: #FFFFFF;
+        /*font-family: "Helvetica Neue";	*/
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        line-height: 16px;
+        text-align: center;
+        border: none;
+        position: absolute;
+        bottom: 20px;
+        margin-left: 5%;
+    }
+    
+    .text_for_card {
+        padding: 10;
+        margin-left: 5%;
+        color: rgba(27, 37, 50, 0.6);
+        /*0font-family: "Helvetica Neue";*/
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 19px;
+    }
+    
+    .header_for_card {
+        margin-top: 32px;
+        margin-left: 5%;
+        color: #1B2532;
+        /*font-family: "Helvetica Neue";	*/
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 19px;
+    }
+}

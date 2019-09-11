@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 54.1 (76490) - https://sketchapp.com -->
+    <title>496AA990-A651-48E2-9ED0-FF704C7C05B6</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.6">
+        <g id="tranistion/landing" transform="translate(-1288.000000, -300.000000)" fill="#1B2532">
+            <g id="ic/20/utility/arrow/half/right" transform="translate(1281.000000, 295.000000)">
+                <path d="M10.00025,12.41425 L6.29325,8.70725 C5.90225,8.31625 5.90225,7.68425 6.29325,7.29325 C6.68425,6.90225 7.31625,6.90225 7.70725,7.29325 L10.00025,9.58625 L12.29325,7.29325 C12.68425,6.90225 13.31625,6.90225 13.70725,7.29325 C14.09825,7.68425 14.09825,8.31625 13.70725,8.70725 L10.00025,12.41425 Z" id="arrow-half-left" transform="translate(10.000250, 9.707125) rotate(-270.000000) translate(-10.000250, -9.707125) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

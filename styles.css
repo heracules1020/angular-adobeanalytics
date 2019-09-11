@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+.mat-dialog-container {
+    padding: 0px !important;
+}
+
+.item {
+    padding: 10;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 50px;
+    line-height: 300px;
+    text-align: center;
+}
+
+.prev_navigation {
+    margin-top: 12px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(27, 37, 50, 0.12);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 12px;
+}
+
+.next_navigation {
+    margin-top: 12px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(27, 37, 50, 0.12);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-bottom: 12px;
+}
+
+.flipimg {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
